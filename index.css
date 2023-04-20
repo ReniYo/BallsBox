@@ -1,0 +1,39 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffca3a;
+}
+
+button {
+    background-color: #1982c4;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.balls-in-box {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.ball-style {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.ball-count-style {
+    color: white;
+}
