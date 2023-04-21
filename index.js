@@ -19,7 +19,7 @@ ballsBtn.addEventListener("click", function(){
     )
     
     for(let ball of ballsInBox){
-        ballsInBoxEl.innerHTML += `
+            ballsInBoxEl.innerHTML += `
                 <div class="ball-style" style="background-color:${ball.color};">
                 <h3 class="ball-count-style">${ball.count}</h3>
                 </div>
@@ -34,10 +34,9 @@ ballsBtn.addEventListener("click", function(){
 enoughBallsBtn.addEventListener("click", function(){
     ballsBtn.disabled = true
     for(let balls of ballsInBox){
-        if(Number(balls.count) > biggestCount) {
-            biggestCount = balls.count
-        }
-        
+            if(Number(balls.count) > biggestCount) {
+                biggestCount = balls.count
+            }
         totalCount += Number(balls.count)
     } 
     console.log(biggestCount)
@@ -47,7 +46,7 @@ enoughBallsBtn.addEventListener("click", function(){
 
 function renderResult() {
     resultEl.innerHTML = `
-        <p>If you are lucky you will have to take out ${totalCount-biggestCount} balls to have only one color in the box.</p>
+        <p class="final-msg">If you are lucky you will have to take out ${totalCount-biggestCount} balls to have only one color in the box.</p>
     `
 }
 

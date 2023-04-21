@@ -8,17 +8,38 @@ html, body {
 }
 
 body {
-    width: 400px;
+    width: 100vw;
     margin: 0 auto;
     padding: 20px;
+    background-color:#548c2f;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
     background-color: #ffca3a;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 1em;
+}
+
+label {
+    color: #104911;
+}
+
+input {
+    border-radius: 5px;
+    border: none;
 }
 
 button {
     background-color: #1982c4;
     color: white;
-    padding: 8px;
+    padding: 10px 42px;
     border-radius: 5px;
+    align-self: flex-start;
 }
 
 .balls-in-box {
@@ -36,4 +57,9 @@ button {
 
 .ball-count-style {
     color: white;
+}
+
+.final-msg {
+    margin: 0;
+    color: #104911;
 }
