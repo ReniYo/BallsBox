@@ -40,6 +40,7 @@ button {
     padding: 10px 42px;
     border-radius: 5px;
     align-self: flex-start;
+    cursor: pointer;
 }
 
 .balls-in-box {
